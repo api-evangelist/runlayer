@@ -1,0 +1,33 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/project/runlayer/ ; https://pypi.org/project/runlayer-hooks-sdk/ ; https://docs.runlayer.com/deploy-cli
+notes: >-
+  Runlayer publishes first-party Python packages under the maintainer
+  "Runlayer <engineering@runlayer.com>". The `runlayer` package is the CLI /
+  local-MCP runner; `runlayer-hooks-sdk` is the agent-runtime telemetry SDK.
+  No npm/@runlayer packages were found (the "TypeScript/Python SDK" snippets in
+  the connect dialogs are generated client config, not published libraries).
+packages:
+- language: python
+  registry: pypi
+  name: runlayer
+  version: 0.28.0
+  url: https://pypi.org/project/runlayer/
+  install: uv tool install runlayer
+  summary: Command-line interface for running MCP servers via HTTP transport (Runlayer CLI).
+  official: true
+- language: python
+  registry: pypi
+  name: runlayer-hooks-sdk
+  version: 0.2.0
+  url: https://pypi.org/project/runlayer-hooks-sdk/
+  install: pip install runlayer-hooks-sdk
+  summary: Runlayer Hooks SDK for Python agent runtimes (hook enforcement + telemetry).
+  official: true
+signed_binaries:
+- platform: macos
+  format: .pkg (signed + notarized, Apple Silicon)
+- platform: windows
+  format: .msi / .intunewin (Authenticode-signed)
+- platform: linux
+  format: .deb / .rpm / .tar.gz (SHA256SUMS)

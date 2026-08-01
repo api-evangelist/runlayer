@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.runlayer.com/platform-api ; https://docs.runlayer.com/platform-audit-logs ; https://docs.runlayer.com/connecting-clients
+summary: >-
+  Cross-cutting request/response semantics for the Runlayer Management API,
+  captured from the docs. The API is a tenant-scoped REST surface under the
+  /api/v1 prefix. No documented idempotency-key contract was found, so no
+  Idempotency pointer is emitted (do not fabricate one).
+authentication:
+  style: api-key-header (x-runlayer-api-key) OR OAuth2 client-credentials / RFC 8693 token exchange
+  ref: authentication/runlayer-authentication.yml
+versioning:
+  scheme: uri-path
+  current: v1
+  base_pattern: https://<your-tenant>.runlayer.com/api/v1
+media_type: application/json
+tracing:
+  audit_correlation: audit events carry correlation id, request id, actor, and client name
+  otel: OTLP ingestion documented for Claude Cowork session events
+error_envelope:
+  style: standard HTTP status codes
+  documented:
+    '401': missing/invalid key or unauthenticated
+    '403': role lacks access
+  ref: errors/runlayer-error-codes.yml
+idempotency:
+  supported: false
+  note: No idempotency-key header is documented in the public API reference.
+pagination:
+  documented: false
+  note: Not specified in public docs; full interactive schemas live at /docs on the tenant.
+rate_limiting:
+  documented: false
+proxy_surface:
+  unified_plugin: /api/v1/proxy/runlayer/mcp (meta-tools search_tools + execute_tool)
+  per_connector: /api/v1/proxy/<server-id>/mcp

@@ -1,25 +1,125 @@
 aid: runlayer
 name: Runlayer
-description: Runlayer is a company surfaced as a portfolio company of felicis and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Runlayer (operated by Anysource Inc.) is an enterprise AI control plane and
+  enablement layer for AI agents. It sits as a governed layer between the AI
+  clients employees already use (Claude, Cursor, ChatGPT, Codex, GitHub Copilot,
+  VS Code, Windsurf — 300+ clients) and company systems, connecting them to
+  18,000+ MCP servers with identity, policy enforcement, runtime security
+  (Runlayer Guard), and audit logging on every request. The platform pairs an
+  MCP gateway, an agent builder (Runlayer Agents), a governed skills/plugins
+  registry (Runlayer Catalog), agent IAM, shadow-AI discovery (Runlayer Watch),
+  and observability. Developers get a tenant-scoped REST Management API
+  (/api/v1), a first-party CLI, Python packages, an OAuth broker, and a platform
+  self-MCP (Runlayer MCP). Backed by a $30M Series A from Felicis and Khosla
+  Ventures (June 2026).
 url: https://raw.githubusercontent.com/api-evangelist/runlayer/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.runlayer.com/apple-touch-icon.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - felicis
+- khosla-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-operated-by: Anysource Inc.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- AI
+- AI Agents
+- MCP
+- Model Context Protocol
+- API Gateway
+- Security
+- Governance
+- Identity
+- Observability
+- Enterprise
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Runlayer Management API
+  description: >-
+    Tenant-scoped RESTful API for programmatic management of an organization's
+    MCP infrastructure — MCP server/connector management, user operations, audit
+    logs, and analytics. Authenticated with an x-runlayer-api-key header or an
+    Agent Account OAuth token (M2M / RFC 8693 OBO).
+  humanURL: https://docs.runlayer.com/platform-api
+  baseURL: https://runlayer.com/api/v1
+  properties:
+  - type: Authentication
+    url: authentication/runlayer-authentication.yml
+  - type: Conventions
+    url: conventions/runlayer-conventions.yml
+  - type: ErrorCatalog
+    url: errors/runlayer-error-codes.yml
+  - type: Lifecycle
+    url: lifecycle/runlayer-lifecycle.yml
 common:
 - type: Website
   url: https://runlayer.com
+- type: Documentation
+  url: https://docs.runlayer.com
+- type: APIReference
+  url: https://docs.runlayer.com/platform-api
+- type: GettingStarted
+  url: https://docs.runlayer.com/quickstart
+- type: Blog
+  url: https://runlayer.com/blog
+- type: GitHubOrganization
+  url: https://github.com/runlayer
+- type: SignUp
+  url: https://runlayer.com/book-a-demo
+- type: TermsOfService
+  url: https://runlayer.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://runlayer.com/privacy-policy
+- type: LLMsTxt
+  url: llms/runlayer-llms.txt
+- type: Packages
+  url: packages/runlayer-packages.yml
+- type: SDKs
+  url: packages/runlayer-packages.yml
+- type: CLI
+  url: cli/runlayer-cli.yml
+- type: MCPServer
+  url: mcp/runlayer-mcp.yml
+- type: Authentication
+  url: authentication/runlayer-authentication.yml
+- type: Conventions
+  url: conventions/runlayer-conventions.yml
+- type: Conformance
+  url: conformance/runlayer-conformance.yml
+- type: Compliance
+  url: https://trust.runlayer.com
+- type: TrustCenter
+  url: security/runlayer-trust-center.yml
+- type: DomainSecurity
+  url: security/runlayer-domain-security.yml
+- type: ErrorCatalog
+  url: errors/runlayer-error-codes.yml
+- type: Lifecycle
+  url: lifecycle/runlayer-lifecycle.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 11
+  pass: local-v1

@@ -1,0 +1,37 @@
+generated: '2026-07-21'
+method: searched
+source: https://runlayer.com/llms.txt ; https://docs.runlayer.com/oauth-broker ; https://docs.runlayer.com/platform-agent-accounts ; https://trust.runlayer.com
+standards:
+- id: soc2
+  conforms: true
+  evidence: "SOC 2 Certified (Runlayer trust center + homepage/llms.txt)."
+- id: hipaa
+  conforms: true
+  evidence: "HIPAA Compliant (Runlayer llms.txt / trust center)."
+- id: gdpr
+  conforms: true
+  evidence: "GDPR Compliant (Runlayer llms.txt / trust center)."
+- id: aarm-extended-r1-r9
+  conforms: true
+  evidence: >-
+    Runlayer states it is the only platform to achieve AARM (Autonomous Action
+    Runtime Management) Extended Conformance R1-R9 — a Vanta-backed open standard
+    for AI agent runtime security.
+- id: oauth2
+  conforms: true
+  evidence: "OAuth 2.0 client-credentials + OAuth broker (docs)."
+- id: oidc
+  conforms: true
+  evidence: "OpenID Connect via the centralized OAuth broker (docs)."
+- id: oauth-pkce
+  conforms: true
+  evidence: "PKCE enforced on MCP<->Broker and Broker<->Vendor hops (docs)."
+- id: oauth-dcr
+  conforms: true
+  evidence: "Dynamic Client Registration supported by the OAuth broker (docs)."
+- id: rfc8693-token-exchange
+  conforms: true
+  evidence: "On-Behalf-Of tokens minted via RFC 8693 token exchange (docs)."
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: "API documents plain HTTP status codes, not application/problem+json."

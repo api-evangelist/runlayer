@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.runlayer.com/deploy-cli ; https://pypi.org/project/runlayer/
+name: runlayer
+binary: runlayer
+summary: >-
+  First-party Runlayer CLI, shipped as a signed self-contained binary per OS
+  (and via `uv tool install runlayer` on PyPI). Runs MCP servers locally behind
+  Runlayer policy/audit, syncs client configs, and drives Runlayer Deploy.
+install:
+- method: pypi
+  command: uv tool install runlayer
+- method: macos
+  command: signed .pkg via MDM -> /usr/local/bin/runlayer
+- method: windows
+  command: Authenticode-signed .msi (.intunewin for Intune) -> C:\Program Files\Runlayer\CLI\
+- method: linux
+  command: .deb / .rpm / .tar.gz -> /usr/bin/runlayer
+auth:
+  command: runlayer login --host https://<your-tenant>.runlayer.com
+  credential_store: OS keychain (fallback ~/.runlayer/config.yaml)
+commands:
+- group: auth
+  commands: [login]
+- group: local-mcp
+  commands: ["run <server-id>"]
+- group: client-sync
+  commands: ["setup sync"]
+- group: deploy
+  commands: [init, validate, deploy, pull, destroy]
+  note: Runlayer Deploy lifecycle (requires org API key with the Deploy role).

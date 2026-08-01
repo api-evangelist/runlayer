@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+url: https://trust.runlayer.com
+certifications:
+- SOC 2
+- HIPAA
+- GDPR
+evidence:
+- source: https://trust.runlayer.com
+  kind: trust-center
+  note: Trust center reachable (HTTP 200, JS-rendered SPA).
+- source: https://runlayer.com/llms.txt
+  keywords: [soc 2 certified, hipaa compliant, gdpr compliant]
+notes: >-
+  Certification names taken from Runlayer's own verbatim llms.txt (SOC 2
+  Certified, HIPAA Compliant, GDPR Compliant). trust.runlayer.com resolves but
+  renders client-side, so the certification badges could not be scraped
+  directly.

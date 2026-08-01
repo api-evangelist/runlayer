@@ -1,0 +1,24 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.runlayer.com/platform-api ; https://docs.runlayer.com/operations/updates
+versioning:
+  scheme: uri-path
+  current: v1
+  base_pattern: https://<your-tenant>.runlayer.com/api/v1
+  docs: https://docs.runlayer.com/platform-api
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  note: No public deprecation policy or Sunset/Deprecation header contract documented.
+sla:
+  url: null
+  uptime_target: null
+status_page:
+  url: null
+  note: No public status page found (status.runlayer.com does not resolve as of 2026-07-21).
+deprecated_operations: []
+notes: >-
+  Self-hosted/managed update procedures are documented under
+  docs.runlayer.com/operations/updates, but there is no public API deprecation
+  policy, SLA page, or status page, so no StatusPage/Deprecation pointer is
+  emitted.

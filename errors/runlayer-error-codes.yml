@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.runlayer.com/platform-api ; https://docs.runlayer.com/connecting-clients
+format: http-status
+envelope: JSON body with standard HTTP status codes
+notes: >-
+  Runlayer's public API reference documents standard HTTP status semantics
+  rather than an RFC 9457 problem+json registry; full interactive
+  request/response schemas live at /docs on each tenant. Captured errors below
+  are the ones the public docs name explicitly.
+errors:
+- status: 401
+  title: Unauthorized
+  meaning: Missing or invalid API key, or an unauthenticated request.
+  remediation: Send a valid key in the x-runlayer-api-key header, or complete OAuth/SSO.
+- status: 403
+  title: Forbidden
+  meaning: The API key's role lacks access to the requested endpoint.
+  remediation: Use a key whose personal/organization role grants the endpoint.

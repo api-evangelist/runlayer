@@ -1,0 +1,125 @@
+<!-- generated: '2026-07-21' -->
+<!-- method: searched -->
+<!-- source: https://runlayer.com/llms.txt -->
+# Runlayer
+
+> Runlayer is an enterprise AI platform — the AI control plane and enablement layer for AI agents. It gives every employee a governed "golden path" to use AI agents (Claude, Cursor, ChatGPT, Codex, and agents) by connecting them to approved capabilities, while platform, security, and IT teams enforce identity, policy, runtime security, and audit logging for every request. It is built for enterprises adopting AI agents faster than they can govern them.
+
+Runlayer pairs AI enablement (getting everyone delegating work to agents) with an AI control plane (securing and controlling everything agents do). It sits as a governed layer between the AI clients employees already use and company systems, so teams keep one golden path for access, policy, and audit. Agents connect to 18,000+ MCP servers across 300+ AI clients, with threat detection, fine-grained permissions, and complete observability.
+
+## Key Facts
+
+- Company: Runlayer (operated by Anysource Inc.).
+- Category: enterprise AI platform — AI control plane, MCP gateway, agent identity and governance, runtime security, and observability for AI agents.
+- Connects AI agents to 18,000+ MCP servers.
+- Supports 300+ AI clients, including Claude, Claude Code, Cursor, ChatGPT, Codex, GitHub Copilot, VS Code, and Windsurf.
+- Runlayer Agents is an agent builder for creating governed agents on demand, with native Slack integration and self-healing agents that automatically update and adjust to fix issues and optimize performance.
+- Runlayer Catalog is Runlayer's skills and plugins registry for publishing and distributing approved connectors, skills, and plugins to agents.
+- Compliance: SOC 2 Certified, HIPAA Compliant, and GDPR Compliant.
+- Runlayer is the only platform to achieve AARM Extended Conformance (R1–R9), the highest tier of the AARM (Autonomous Action Runtime Management) specification — a Vanta-backed open standard for AI agent runtime security created by Herman Errico — meeting the full and extended requirements out of 40+ builders in the AARM ecosystem.
+- Runtime security (Runlayer Guard) runs tool scans at typical 50–100ms inference times.
+- Customers include Gusto, Jane, Homebase, Decagon, PagerDuty, Opendoor, AngelList, Lemonade, and dbt Labs.
+- Backed by Khosla Ventures, Felicis, and SVCI.
+- Raised a $30M Series A from Felicis and Khosla Ventures (June 2026), bringing total funding to $42M.
+- Endorsed by David Soria Parra, co-creator of MCP at Anthropic ("Runlayer makes AI enterprise-ready"), and Travis McPeak, Head of Security at Cursor ("Runlayer provides must-have visibility, control, and trust").
+
+## Core
+
+- [Runlayer](https://www.runlayer.com/): Enterprise AI platform that connects AI agents to 18,000+ MCP servers with threat detection, fine-grained permissions, and complete observability.
+- [About Runlayer](https://www.runlayer.com/about): Company background, mission, team, and backers.
+- [Book a demo](https://www.runlayer.com/book-a-demo): Talk to the Runlayer team.
+
+## Platform
+
+- [Platform overview](https://www.runlayer.com/platform): One platform to accelerate and control AI usage — enablement plus an AI control plane.
+- [Runlayer MCP Gateway](https://www.runlayer.com/mcp-gateway): Make approved MCP access the default across Claude, Cursor, ChatGPT, Codex, and agents, with policy, OAuth, runtime security, and an audit trail for every request.
+- [Runlayer Agents](https://www.runlayer.com/agents): An agent builder for instant, governed agents created on demand — with native Slack integration and self-healing agents that automatically update and adjust to fix issues and optimize performance, backed by approved tools, scoped identity, and a secured runtime.
+- [Runlayer Catalog](https://www.runlayer.com/catalog): A governed skills and plugins registry that distributes approved connectors, skills, and plugins to every agent, with ownership, dependencies, access, and usage signals.
+- [Agent IAM & Governance](https://www.runlayer.com/identity-policy): Control what every agent can access by tying each request to an actor, credential source, policy decision, and audit record, across autonomous and delegated access models.
+- [Runlayer Guard](https://www.runlayer.com/guard): Catch risky behavior before it runs — inspect tools, outputs, PII, and agent behavior at runtime (ToolGuard and AgentGuard) before risky actions reach company systems.
+- [Runlayer Watch](https://www.runlayer.com/watch): Discover and control shadow AI across managed devices via existing MDM, then approve, migrate, remove, or block unmanaged MCPs, skills, plugins, and clients.
+- [ROI & Observability](https://www.runlayer.com/visibility): See usage, spend, adoption, and audit history across the users, clients, tools, agents, and workflows behind AI work — an audit trail for every action.
+
+## Solutions
+
+- [AI Transformation](https://www.runlayer.com/solutions/ai-transformation): Give employees a golden path to useful agents, with platform and security controls built in.
+- [AI Platform](https://www.runlayer.com/solutions/ai-platform): Publish approved tools and agents as reusable infrastructure across teams.
+- [IT & Security](https://www.runlayer.com/solutions/it-security): Shadow AI detection, access control, runtime security, and audit that security teams can stand behind.
+
+## FAQ
+
+### Who is Runlayer for?
+
+Runlayer is for companies rolling out AI agents across engineering, security, IT, operations, and business teams while keeping one golden path for access, policy, and audit.
+
+### When should a company use Runlayer?
+
+Use Runlayer when employees are adopting Claude, Cursor, ChatGPT, Codex, and internal agents faster than platform and security teams can govern them. It is built for companies that need approved MCPs, reusable agent capabilities, policy enforcement, and audit across many teams and AI clients.
+
+### How is Runlayer different from an MCP gateway?
+
+An MCP gateway is one layer of the system. Runlayer adds the catalog, identity controls, reusable capabilities, observability, and agent workflows teams need to make governed agent work practical across the company.
+
+### How does Runlayer work with our existing stack?
+
+Runlayer connects to your identity provider, approved tools, MCP servers, and existing AI clients so teams can keep using the products they already prefer with centralized controls around them.
+
+### Which AI clients does Runlayer support?
+
+Runlayer supports 300+ AI clients, including Cursor, Claude Code, ChatGPT, VS Code, GitHub Copilot, Codex, and Windsurf.
+
+### Does Runlayer have an agent builder?
+
+Yes. Runlayer Agents is an agent builder for creating governed agents on demand, with native Slack integration and self-healing agents that automatically update and adjust to fix issues and optimize performance. It runs on approved tools, scoped identity, and a secured runtime.
+
+### Does Runlayer have a skills and plugins registry?
+
+Yes. Runlayer Catalog is Runlayer's governed skills and plugins registry, publish and distribute approved connectors, skills, and plugins to agents with ownership, dependencies, access, and usage signals.
+
+### What threats does Runlayer Guard look for?
+
+ToolGuard looks for tool poisoning, prompt injection, output manipulation, data exfiltration, privilege escalation, destructive actions, and resource abuse. AgentGuard monitors session-level behavior for manipulation and task drift.
+
+### What does Runlayer Watch find?
+
+Watch finds agents, AI clients, MCP servers, skills, and plugins used on managed devices, showing what is managed, shadow, outdated, or risky — deployed through existing MDM with no employee opt-in.
+
+### What does Runlayer reduce or consolidate?
+
+Runlayer reduces one-off MCP setup, shadow AI usage, custom permission glue, manual review processes, fragmented audit trails, and separate enablement work for each team adopting agents.
+
+## Customers
+
+- [Customers](https://www.runlayer.com/customers): Index of Runlayer customer stories.
+- [Gusto: How Gusto Ignited an AI-Driven Workflow Revolution Across 3,000+ Knowledge Workers With Runlayer](https://www.runlayer.com/customers/gusto): Gusto adopted Runlayer to wrangle decentralized AI experimentation through a unified command-and-control plane that securely connects tools, agents, and MCPs.
+- [Jane App: Jane App Moves 800+ Knowledge Workers From AI Experiments to Production Workflows With Runlayer](https://www.runlayer.com/customers/jane-app): Jane App adopted Runlayer as its AI command-and-control plane, driving AI adoption across the organization while unlocking 360-degree observability for every deployment.
+- [Homebase: Homebase Scaled Governed AI Workflows to 400+ Employees in Under 5 Months With Runlayer](https://www.runlayer.com/customers/homebase): Homebase implemented Runlayer to turn an environment of disparate MCP and agent experimentation into a governed, observable ecosystem that accelerated the path to AI transformation.
+
+## Blog
+
+- [Blog](https://www.runlayer.com/blog): Runlayer blog index.
+- [Join Runlayer at Black Hat 2026](https://www.runlayer.com/blog/runlayer-black-hat-2026): Meet the Runlayer team at Black Hat USA 2026 in Las Vegas, August 1–6. Book a private executive briefing at the Four Seasons or join us for Supercar Track Day at SpeedVegas on Wednesday, August 5.
+- [We Raised $30M to Help Companies Go All In on AI](https://www.runlayer.com/blog/series-A-30m-fundraise-felicis-khosla): We've raised a $30M Series A from Felicis and Khosla Ventures, bringing total funding to $42M, to build the golden path for AI: one platform that lets every team build agents without losing security and control.
+- [What are the Best Practices for AI Agent Audit Trails](https://www.runlayer.com/blog/ai-agent-audit-trails-dos-and-donts): When an agent makes the wrong call, your audit trail is the only record of what happened. Here's what most logs leave out and how to fix yours before an incident.
+- [Traditional API Observability versus MCP Observability](https://www.runlayer.com/blog/api-observability-vs-mcp-observability): APM tools assume deterministic systems. AI agents break that at the client. Here's why MCP traffic defeats traditional observability, and why the real gap is reconstructing intent from a trace.
+- [Breaking down the latest MCP Authorization SEPs](https://www.runlayer.com/blog/the-latest-MCP-Authorization-SEPs): MCP's new authorization hardening RC quietly landed six spec fixes that most people glossed over. We broke them down into three problem clusters: trust domain confusion, credential lifecycle management, and authorization boundaries.
+- [Runlayer and Anthropic MCP Tunnels: connecting Claude to systems behind your firewall](https://www.runlayer.com/blog/anthropic-mcp-tunnels): Runlayer and Anthropic collaborated on MCP Tunnels, which invert the connection direction so your network reaches out to Anthropic instead of exposing inbound ports, removing the security wall that blocks Claude from accessing internal systems like Jira, databases, and telemetry.
+- [Don’t build your own MCP gateway](https://www.runlayer.com/blog/mcp-gateway-build-vs-buy): Senior engineers look at an MCP gateway and see a reverse proxy with auth and logs. That instinct is wrong. MCP attack vectors shift constantly, performance breaks at scale in specific ways, and threat detection requires MCP-specific signals that generic tools miss.
+- [Fine-Grained Permissions and Identity Management for AI Agents](https://www.runlayer.com/blog/ai-agent-identity-permissions-management): MCP adoption has exploded inside enterprises, with shadow servers and over-provisioned agents creating an attack surface most security teams haven't caught up to. Traditional IAM, OAuth, and RBAC weren't built for non-deterministic agents that delegate to other agents.
+- [Runlayer named to Rising in Cyber 2026](https://www.runlayer.com/blog/rising-in-cyber-2026): Runlayer was named to Notable Capital & Morgan Stanley's 2026 Rising in Cyber list, voted on by 150 sitting CISOs. Andy Berman on why the recognition matters, and what it signals about how AI-native companies are getting built.
+- [Why production AI systems need MCP gateways](https://www.runlayer.com/blog/MCP-gateways): An MCP gateway acts as the centralized proxy layer for agent-to-tool communications, handling tool discovery, authentication, input/output filtering, and observability across an organization's agentic systems.
+- [The MCP STDIO RCE class, and why Runlayer doesn't run what the LLM asks it to](https://www.runlayer.com/blog/mcp-stdio-rce-class-why-runlayer-doesnt-run-what-llm-asks): OX Security found a design-level flaw in Anthropic's Model Context Protocol. MCP's STDIO transport turns a config file into a command executor. Here's how Runlayer's control plane breaks each of the four attack vectors.
+- [Runlayer and AARM Partner to Secure Enterprise Agents](https://www.runlayer.com/blog/runlayer-and-aarm-partner-to-secure-enterprise-agents): Runlayer achieves AARM Extended Conformance (R1–R9), partnering with the Vanta-backed open specification to define how enterprises secure AI agents at runtime.
+- …and 20 more at https://www.runlayer.com/blog (full list in https://www.runlayer.com/llms-full.txt).
+
+## Optional
+
+- [Trust Center](https://trust.runlayer.com): Security, compliance, and trust documentation (SOC 2, HIPAA, GDPR).
+- [Documentation](https://docs.runlayer.com): Runlayer product and developer documentation.
+- [llms-full.txt](https://www.runlayer.com/llms-full.txt): Full-text version of this content for single-fetch ingestion.
+- [Legal](https://www.runlayer.com/legal)
+- [Privacy Policy](https://www.runlayer.com/legal/privacy-policy)
+- [Terms of Use](https://www.runlayer.com/legal/terms-of-service)
+- [Information Security Addendum](https://www.runlayer.com/legal/security-addendum)
+
+_Last updated: 2026-07-15._
