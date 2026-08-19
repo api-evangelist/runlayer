@@ -4,11 +4,9 @@ status: published
 source: https://docs.runlayer.com/runlayer-mcp
 server:
   name: Runlayer MCP
-  description: >-
-    First-party "platform self-MCP" — a hosted Runlayer MCP server that lets an
-    assistant query and manage Runlayer itself (audit logs, analytics, server
-    inventory, policies, plugins, skills, agents). Distinct from the Runlayer
-    Plugin unified connector entrypoint. All calls are governed by the caller's
+  description: First-party "platform self-MCP" — a hosted Runlayer MCP server that lets an assistant query
+    and manage Runlayer itself (audit logs, analytics, server inventory, policies, plugins, skills, agents).
+    Distinct from the Runlayer Plugin unified connector entrypoint. All calls are governed by the caller's
     Runlayer permissions and recorded in Audit Logs.
   transport: http
   hosted: true
@@ -31,10 +29,14 @@ tools:
 - name: list_server_tools
   description: List tools/resources/prompts exposed by a server (via the Runlayer proxy).
 - name: manage_governance
-  description: Inspect/maintain policies, access requests, plugins, skills, and agents (admin/owner gated, confirm-required).
-notes: >-
-  Runlayer is itself an MCP gateway fronting 18,000+ MCP servers for 300+ AI
-  clients; the Runlayer Plugin unified endpoint exposes connector tools via two
-  meta-tools (search_tools, execute_tool) at
-  /api/v1/proxy/runlayer/mcp. This artifact captures the platform self-MCP,
-  which is the discrete first-party server.
+  description: Inspect/maintain policies, access requests, plugins, skills, and agents (admin/owner gated,
+    confirm-required).
+notes: Runlayer is itself an MCP gateway fronting 18,000+ MCP servers for 300+ AI clients; the Runlayer
+  Plugin unified endpoint exposes connector tools via two meta-tools (search_tools, execute_tool) at /api/v1/proxy/runlayer/mcp.
+  This artifact captures the platform self-MCP, which is the discrete first-party server.
+deployment:
+  mode: remote
+  verified: searched
+  tools: 9
+  checked: '2026-08-12'
+  source: catalog MCP census
