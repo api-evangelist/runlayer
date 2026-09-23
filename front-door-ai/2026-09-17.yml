@@ -1,0 +1,31 @@
+# Front Door AI Index — runlayer — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: runlayer
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: runlayer.com
+  final_host: www.runlayer.com
+  ownership: own
+  owner: runlayer
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 41
+  host_score: 41
+  density: 57.83
+  words: 709
+  tiers:
+    agentic: 10
+    core: 27
+    model: 4
+  ambiguous: 21
+  top_terms:
+    AI: 27
+    agent: 21
+    MCP: 9
+    Claude: 2
+    AI agent: 1
+    Anthropic: 1
+    ChatGPT: 1
