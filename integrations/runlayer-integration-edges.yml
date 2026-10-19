@@ -16,9 +16,55 @@ edges:
   detected: '2026-10-18'
   detected_by: mirror-platform-listings.py
   category: Slack app
+- partner_name: PyPI
+  partner: pypi
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (Python)
+  evidence: https://pypi.org/project/runlayer/
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: PyPI (public registry JSON)
+    spec_file: null
+    language: Python
+    packages:
+    - name: runlayer
+      version: 0.31.17
+      released: '2026-10-14'
+      released_field: upload_time
+      lapsed: false
+      page: https://pypi.org/project/runlayer/
+      repo_leg: domain:runlayer.com
+      publisher_leg: email:runlayer.com
+      matched_by: domain
+    - name: runlayer-hooks-sdk
+      version: 0.2.3
+      released: '2026-09-09'
+      released_field: upload_time
+      lapsed: false
+      page: https://pypi.org/project/runlayer-hooks-sdk/
+      repo_leg: domain:runlayer.com
+      publisher_leg: email:runlayer.com
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
 generated: '2026-10-18'
 method: searched
 source:
 - slack/integrations/slack-integration-edges.yml
 checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
 - slack/integrations/slack-integration-edges.yml
